@@ -24,7 +24,7 @@ export default {
                     :name="name"
                     :descripcion="descripcion"
                     :precio="precio"
-                    :cantidad="precio"
+                    :cantidad="cantidad"
                     :imagen="imagen"
                 />
             </div>
