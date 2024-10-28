@@ -14,7 +14,7 @@ export default {
 <template>
     <section class="container" id="productos">
         <div>
-            <h1 class=" text-center">Productos</h1>
+            <h1 class=" text-center">Nuestros productos</h1>
             <div class="d-flex justify-content-center">
                 <Card
                 v-for="(producto, index) in productos" :key="index"
@@ -25,7 +25,6 @@ export default {
                     :imagen="producto.imagen"
                 />
             </div>
-            <router-link to="/" class="btn btn-secondary mb-4">Volver a Inicio</router-link> <!-- Enlace de redirección -->
         </div>
     </section>
 </template>

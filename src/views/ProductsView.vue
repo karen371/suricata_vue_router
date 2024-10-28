@@ -25,7 +25,9 @@ export default {
                     :imagen="producto.imagen"
                 />
             </div>
-            <router-link to="/" class="btn btn-secondary mb-4">Volver a Inicio</router-link> <!-- Enlace de redirección -->
+            <div class="text-center mt-4">
+                <router-link to="/" class="btn btn-secondary mb-4">Volver a Inicio</router-link>
+            </div>
         </div>
     </section>
 </template>
