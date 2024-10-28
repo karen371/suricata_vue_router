@@ -14,10 +14,10 @@ body {
   height: 3.3125rem;
 }
 #productos {
-  padding-top: 3.75rem;
+  padding-top: 2.5rem;
 }
 #productos h1 {
-  padding: 60px 0px;
+  padding: 40px 0px;
 }
 
 @media (max-width: 768px) {
