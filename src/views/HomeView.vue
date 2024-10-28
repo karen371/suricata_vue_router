@@ -1,30 +1,31 @@
-<template>
-  <section class="container" id="productos">
-    <h1 class=" text-center">Nuestros Productos</h1>
-    <Card 
-      name="Colaciones"
-      descripcion="Some quick example text to build on the card title and make up the
-                bulk of the card's content."
-      precio="$5000"
-      cantidad="Dapibus ac facilisis in"
-      :imagen="imagen"
-    />
-  </section>
-
-</template>
-
 <script>
-// @ is an alias to /src
-import Card from '../components/Card.vue'
-import imagen from '../assets/img/colaciones.jpg'
+import Card from '@/components/Card.vue';
 export default {
-  components: {
-    Card
-  },
-  data() {
-    return {
-      imagen
-    };
-  }
+    name: 'HomeView',
+    props: {
+        productos: Array
+    },
+    components: {
+        Card
+    }
 }
 </script>
+
+<template>
+    <section class="container" id="productos">
+        <div>
+            <h1 class=" text-center">Productos</h1>
+            <div class="d-flex justify-content-center">
+                <Card
+                v-for="(producto, index) in productos" :key="index"
+                    :name="producto.name"
+                    :descripcion="producto.descripcion"
+                    :precio="producto.precio"
+                    :cantidad="producto.cantidad"
+                    :imagen="producto.imagen"
+                />
+            </div>
+            <router-link to="/" class="btn btn-secondary mb-4">Volver a Inicio</router-link> <!-- Enlace de redirección -->
+        </div>
+    </section>
+</template>

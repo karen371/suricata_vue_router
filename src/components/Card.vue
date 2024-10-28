@@ -3,9 +3,9 @@
   <section class="container" id="productos">
     <div class="row">
       <!-- primera -->
-      <div class="col-sm-4 col-12 px-5 mb-4">
+      <div class="col-4  col-12 px-5 mb-4">
         <div class="card">
-          <img src="../assets/img/colaciones.jpg" class="card-img-top" alt="colaciones" />
+          <img :src="imagen" class="card-img-top" :alt="name" />
           <div class="card-body">
             <h5 class="card-title fw-bold">{{name}}</h5>
             <p class="card-text"> {{descripcion}}</p>
