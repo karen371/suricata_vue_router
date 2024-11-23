@@ -18,7 +18,7 @@ const router = createRouter({
           {
             name: "Colaciones",
             descripcion: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-            precio: "$7000",
+            precio: "$5000",
             cantidad: "Para uno personas",
             imagen: imagenProducto4
           },
